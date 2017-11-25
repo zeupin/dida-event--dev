@@ -124,7 +124,7 @@ final class EventBus
      *
      * @param string $event 事件名称
      */
-    public function toggle($event)
+    public function trigger($event)
     {
         if (array_key_exists($event, $this->hooks)) {
             /*
